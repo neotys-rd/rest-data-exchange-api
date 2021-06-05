@@ -70,7 +70,7 @@ namespace Neotys.DataExchangeAPI.Client
 			{
 				CreateEntity(Entries.Entry, properties);
 			}
-			catch (Microsoft.OData.Core.ODataException oDataException)
+			catch (Microsoft.OData.ODataException oDataException)
 			{
 				throw new NeotysAPIException(oDataException);
 			}
@@ -101,7 +101,7 @@ namespace Neotys.DataExchangeAPI.Client
 			{
 				CreateFeed(Entries.Entry, entriesProperties);
 			}
-			catch (Microsoft.OData.Core.ODataException oDataException)
+			catch (Microsoft.OData.ODataException oDataException)
 			{
 				throw new NeotysAPIException(oDataException);
 			}
@@ -141,7 +141,7 @@ namespace Neotys.DataExchangeAPI.Client
 					CreateEntity(XMLEntries.XMLENTRIES, properties);
 				}
 			}
-			catch (Microsoft.OData.Core.ODataException oDataException)
+			catch (Microsoft.OData.ODataException oDataException)
 			{
 				throw new NeotysAPIException(oDataException);
 			}
